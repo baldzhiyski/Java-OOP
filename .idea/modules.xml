@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Encapsulation/Encapsulation.iml" filepath="$PROJECT_DIR$/Encapsulation/Encapsulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Inheritance/Inheritance.iml" filepath="$PROJECT_DIR$/Inheritance/Inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Interfaces and Abstraction/Interfaces and Abstraction.iml" filepath="$PROJECT_DIR$/Interfaces and Abstraction/Interfaces and Abstraction.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java_OOP.iml" filepath="$PROJECT_DIR$/Java_OOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Polymorphism/Polymorphism.iml" filepath="$PROJECT_DIR$/Polymorphism/Polymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Polymorphismm/Polymorphismm.iml" filepath="$PROJECT_DIR$/Polymorphismm/Polymorphismm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SOLID Principals/SOLID Principals.iml" filepath="$PROJECT_DIR$/SOLID Principals/SOLID Principals.iml" />
       <module fileurl="file://$PROJECT_DIR$/Working with Abstractions/Working with Abstractions.iml" filepath="$PROJECT_DIR$/Working with Abstractions/Working with Abstractions.iml" />
     </modules>
   </component>
