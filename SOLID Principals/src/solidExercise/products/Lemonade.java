@@ -1,6 +1,6 @@
 package solidExercise.products;
 
-public class Lemonade {
+public class Lemonade implements Drink{
 
     public static final double CALORIES_PER_100_GRAMS = 53.0;
     public static final double DENSITY = 0.7;
@@ -13,5 +13,15 @@ public class Lemonade {
 
     public double getMilliliters() {
         return milliliters;
+    }
+
+    @Override
+    public double amountOfCalories() {
+        return (CALORIES_PER_100_GRAMS/100)*(getMilliliters()*DENSITY);
+    }
+
+    @Override
+    public double amountOfDrink() {
+        return milliliters/1000 *DENSITY;
     }
 }
