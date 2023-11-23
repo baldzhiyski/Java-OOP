@@ -1,4 +1,4 @@
-package BankAppSkeletonn.src.main.java.bank.common;
+package Exam_5August23.BankAppSkeletonn.src.main.java.bank.common;
 
 public class ConstantMessages {
     public static final String UNSUITABLE_BANK = "Unsuitable bank.";

@@ -1,8 +1,8 @@
-package BankAppSkeletonn.src.main.java.bank.entities.bank;
+package Exam_5August23.BankAppSkeletonn.src.main.java.bank.entities.bank;
 
-import BankAppSkeletonn.src.main.java.bank.common.ExceptionMessages;
-import BankAppSkeletonn.src.main.java.bank.entities.client.Client;
-import BankAppSkeletonn.src.main.java.bank.entities.loan.Loan;
+import Exam_5August23.BankAppSkeletonn.src.main.java.bank.common.ExceptionMessages;
+import Exam_5August23.BankAppSkeletonn.src.main.java.bank.entities.client.Client;
+import Exam_5August23.BankAppSkeletonn.src.main.java.bank.entities.loan.Loan;
 
 import java.util.ArrayList;
 import java.util.Collection;

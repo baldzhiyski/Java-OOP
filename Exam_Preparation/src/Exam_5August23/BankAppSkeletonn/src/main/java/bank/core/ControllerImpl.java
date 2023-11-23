@@ -1,17 +1,17 @@
-package BankAppSkeletonn.src.main.java.bank.core;
+package Exam_5August23.BankAppSkeletonn.src.main.java.bank.core;
 
-import BankAppSkeletonn.src.main.java.bank.common.ConstantMessages;
-import BankAppSkeletonn.src.main.java.bank.common.ExceptionMessages;
-import BankAppSkeletonn.src.main.java.bank.entities.bank.Bank;
-import BankAppSkeletonn.src.main.java.bank.entities.bank.BranchBank;
-import BankAppSkeletonn.src.main.java.bank.entities.bank.CentralBank;
-import BankAppSkeletonn.src.main.java.bank.entities.client.Adult;
-import BankAppSkeletonn.src.main.java.bank.entities.client.Client;
-import BankAppSkeletonn.src.main.java.bank.entities.client.Student;
-import BankAppSkeletonn.src.main.java.bank.entities.loan.Loan;
-import BankAppSkeletonn.src.main.java.bank.entities.loan.MortgageLoan;
-import BankAppSkeletonn.src.main.java.bank.entities.loan.StudentLoan;
-import BankAppSkeletonn.src.main.java.bank.repositories.LoanRepository;
+import Exam_5August23.BankAppSkeletonn.src.main.java.bank.common.ConstantMessages;
+import Exam_5August23.BankAppSkeletonn.src.main.java.bank.common.ExceptionMessages;
+import Exam_5August23.BankAppSkeletonn.src.main.java.bank.entities.bank.Bank;
+import Exam_5August23.BankAppSkeletonn.src.main.java.bank.entities.bank.BranchBank;
+import Exam_5August23.BankAppSkeletonn.src.main.java.bank.entities.bank.CentralBank;
+import Exam_5August23.BankAppSkeletonn.src.main.java.bank.entities.client.Adult;
+import Exam_5August23.BankAppSkeletonn.src.main.java.bank.entities.client.Client;
+import Exam_5August23.BankAppSkeletonn.src.main.java.bank.entities.client.Student;
+import Exam_5August23.BankAppSkeletonn.src.main.java.bank.entities.loan.Loan;
+import Exam_5August23.BankAppSkeletonn.src.main.java.bank.entities.loan.MortgageLoan;
+import Exam_5August23.BankAppSkeletonn.src.main.java.bank.entities.loan.StudentLoan;
+import Exam_5August23.BankAppSkeletonn.src.main.java.bank.repositories.LoanRepository;
 
 
 import java.util.LinkedHashMap;
@@ -20,7 +20,7 @@ import java.util.stream.Collectors;
 
 public class ControllerImpl implements Controller{
     private LoanRepository loans;
-    private Map<String,Bank> banks;
+    private Map<String, Bank> banks;
 
     public ControllerImpl() {
         this.loans = new LoanRepository();

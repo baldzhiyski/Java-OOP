@@ -1,6 +1,6 @@
-package Exam_5August23.BankAppSkeletonn.src.main.java.bank.core;
+package Exam_8April23.RobotServiceApp.src.main.java.robotService.core;
 
-import Exam_5August23.BankAppSkeletonn.src.main.java.bank.common.Command;
+import Exam_8April23.RobotServiceApp.src.main.java.robotService.common.Command;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +12,7 @@ public class EngineImpl implements Engine {
     private BufferedReader reader;
 
     public EngineImpl() {
-        this.controller = new ControllerImpl(); //TODO implement first
+        this.controller = new ControllerImpl();
         this.reader = new BufferedReader(new InputStreamReader(System.in));
     }
 
@@ -43,20 +43,23 @@ public class EngineImpl implements Engine {
         String[] data = Arrays.stream(tokens).skip(1).toArray(String[]::new);
 
         switch (command) {
-            case AddBank:
-                result = addBank(data);
+            case AddService:
+                result = addService(data);
                 break;
-            case AddLoan:
-                result = addLoan(data);
+            case AddSupplement:
+                result = addSupplement(data);
                 break;
-            case ReturnedLoan:
-                result = returnedLoan(data);
+            case SupplementForService:
+                result = supplementForService(data);
                 break;
-            case AddClient:
-                result = addClient(data);
+            case AddRobot:
+                result = addRobot(data);
                 break;
-            case FinalCalculation:
-                result = finalCalculation(data);
+            case FeedingRobot:
+                result = feedingRobot(data);
+                break;
+            case SumOfAll:
+                result = sumOfAll(data);
                 break;
             case Statistics:
                 result = getStatistics();
@@ -68,27 +71,31 @@ public class EngineImpl implements Engine {
         return result;
     }
 
-    private String addBank(String[] data) {
-       return this.controller.addBank(data[0],data[1]);
+    private String addService(String[] data) {
+       return controller.addService(data[0],data[1]);
     }
-    private String addLoan(String[] data) {
-       return this.controller.addLoan(data[0]);
-    }
-
-    private String returnedLoan(String[] data) {
-        return this.controller.returnedLoan(data[0],data[1]);
+    private String addSupplement(String[] data) {
+        return controller.addSupplement(data[0]);
     }
 
-    private String addClient(String[] data) {
-        return controller.addClient(data[0],data[1],data[2],data[3],Double.parseDouble(data[4]));
+    private String supplementForService(String[] data) {
+        return controller.supplementForService(data[0],data[1]);
     }
 
-    private String finalCalculation(String[] data) {
-        return this.controller.finalCalculation(data[0]);
+    private String addRobot(String[] data) {
+        return controller.addRobot(data[0],data[1]
+        ,data[2],data[3],Double.parseDouble(data[4]));
+    }
+
+    private String feedingRobot(String[] data) {
+        return controller.feedingRobot(data[0]);
+    }
+
+    private String sumOfAll(String[] data) {
+        return controller.sumOfAll(data[0]);
     }
 
     private String getStatistics() {
         return this.controller.getStatistics();
     }
 }
-

@@ -1,4 +1,4 @@
-package BankAppSkeletonn.src.main.java.bank.entities.client;
+package Exam_5August23.BankAppSkeletonn.src.main.java.bank.entities.client;
 
 public class Student extends BaseClient{
     private static final int INTEREST = 2;

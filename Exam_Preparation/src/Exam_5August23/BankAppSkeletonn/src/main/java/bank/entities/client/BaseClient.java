@@ -1,6 +1,6 @@
-package BankAppSkeletonn.src.main.java.bank.entities.client;
+package Exam_5August23.BankAppSkeletonn.src.main.java.bank.entities.client;
 
-import BankAppSkeletonn.src.main.java.bank.common.ExceptionMessages;
+import Exam_5August23.BankAppSkeletonn.src.main.java.bank.common.ExceptionMessages;
 
 public abstract class BaseClient implements Client{
     private String name;

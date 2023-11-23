@@ -1,6 +1,6 @@
-package BankAppSkeletonn.src.main.java.bank.repositories;
+package Exam_5August23.BankAppSkeletonn.src.main.java.bank.repositories;
 
-import BankAppSkeletonn.src.main.java.bank.entities.loan.Loan;
+import Exam_5August23.BankAppSkeletonn.src.main.java.bank.entities.loan.Loan;
 
 import java.util.ArrayList;
 import java.util.Collection;

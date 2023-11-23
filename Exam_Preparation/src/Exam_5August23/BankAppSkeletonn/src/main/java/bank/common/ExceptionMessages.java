@@ -1,4 +1,4 @@
-package BankAppSkeletonn.src.main.java.bank.common;
+package Exam_5August23.BankAppSkeletonn.src.main.java.bank.common;
 
 public class ExceptionMessages {
     public static final String CLIENT_NAME_CANNOT_BE_NULL_OR_EMPTY = "Client name cannot be null or empty.";
