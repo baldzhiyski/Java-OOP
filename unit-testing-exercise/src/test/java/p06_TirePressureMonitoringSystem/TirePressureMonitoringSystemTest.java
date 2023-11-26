@@ -34,4 +34,11 @@ public class TirePressureMonitoringSystemTest {
         alarm.check();
         assertFalse(alarm.getAlarmOn());
     }
+    @Test
+    public void testSetAlarmSuccessful(){
+        Sensor sensor = new Sensor();
+        Alarm alarm = new Alarm(sensor);
+        alarm.setAlarmOn(true);
+        assertTrue(alarm.getAlarmOn());
+    }
 }

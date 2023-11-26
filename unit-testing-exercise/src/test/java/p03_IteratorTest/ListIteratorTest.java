@@ -12,12 +12,10 @@ import static org.junit.Assert.*;
 public class ListIteratorTest {
     private ListIterator listIterator;
     private static final String[] NAMES = {"Angel","Mariq","Deya"};
-    private int currentIndex;
 
     @Before
     public void setUp() throws OperationNotSupportedException {
         listIterator=new ListIterator("Angel","Mariq","Deya");
-        currentIndex=0;
     }
     @Test(expected = OperationNotSupportedException.class)
     public void testCreateListIteratorWithNullShouldThrow() throws OperationNotSupportedException {
@@ -34,15 +32,9 @@ public class ListIteratorTest {
     @Test
     public void testMove(){
         assertTrue(listIterator.move());
-        currentIndex++;
-        assertEquals(currentIndex,1);
         listIterator.move();
-        currentIndex++;
         listIterator.move();
-        currentIndex++;
         listIterator.move();
-        currentIndex++;
-        assertEquals(currentIndex,4);
         assertFalse(listIterator.move());
     }
     @Test(expected = IllegalStateException.class)
