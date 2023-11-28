@@ -1,7 +1,9 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
@@ -253,6 +255,17 @@ public class ChainBlockImplTest {
                 .collect(Collectors.toList());
         assertEquals(expected.size(),actualList.size());
         assertEquals(expected.get(0).getId(),actualList.get(0).getId());
+    }
+    @Test
+    public void testIteratorReturnAllTransactions(){
+        fillDataBase();
+        List<Transaction> expected = transactions;
+        Iterator<Transaction> iterator = database.iterator();
+        List<Transaction> actual = new ArrayList<>();
+        while (iterator.hasNext()){
+            actual.add(iterator.next());
+        }
+        assertEquals(expected, actual);
     }
     public List<Transaction> createTransactions(){
       return  List.of(new TransactionImpl(1,TransactionStatus.FAILED,"Peter","Kaloyan",22.7),

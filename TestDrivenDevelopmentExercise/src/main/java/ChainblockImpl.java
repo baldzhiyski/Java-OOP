@@ -53,6 +53,7 @@ public class ChainblockImpl implements Chainblock{
 
     public Iterable<String> getAllSendersWithTransactionStatus(TransactionStatus status) {
 
+        //Die groupingBy-Operation gruppiert Transaktionen nach Absender, und die Absender-IDs dienen als Schlüssel in der resultierenden Map.
         Map<String, List<Transaction>> sendersMap = database.values()
                 .stream()
                 .filter(transaction -> transaction.getStatus().equals(status))
@@ -163,6 +164,18 @@ public class ChainblockImpl implements Chainblock{
                 .collect(Collectors.toList());
     }
     public Iterator<Transaction> iterator() {
-        return null;
+        return new Iterator<Transaction>() {
+            private Iterator<Map.Entry<Integer, Transaction>> iterator = database.entrySet().iterator();
+
+            @Override
+            public boolean hasNext() {
+                return iterator.hasNext();
+            }
+
+            @Override
+            public Transaction next() {
+                return iterator.next().getValue();
+            }
+        };
     }
 }
