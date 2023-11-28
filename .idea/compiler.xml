@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="TestDrivenDevelopment" />
         <module name="Handball-Unit-Testing" />
+        <module name="inStock" />
         <module name="unit-testing" />
+        <module name="TestDrivenDevelopmentExercise" />
         <module name="unit-testing-exercise" />
         <module name="Polymorphism" />
       </profile>
@@ -16,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="Handball-Unit-Testing" target="20" />
       <module name="Polymorphism" target="20" />
+      <module name="TestDrivenDevelopment" target="9" />
       <module name="unit_testing_2" target="20" />
     </bytecodeTargetLevel>
   </component>

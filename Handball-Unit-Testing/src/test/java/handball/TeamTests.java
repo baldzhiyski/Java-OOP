@@ -33,8 +33,8 @@ public class TeamTests {
     @Test
     public void testConstructorWorkingProperly(){
         Team team1 = new Team("Team1",10);
-        Assert.assertEquals(team.getName(),team1.getName());
-        Assert.assertEquals(team.getPosition(),team1.getPosition());
+        Assert.assertEquals("Team1",team1.getName());
+        Assert.assertEquals(10,team1.getPosition());
     }
     @Test(expected = IllegalArgumentException.class)
     public void testAddShouldFailAndThrowWhenNotEnoughCapacity(){
