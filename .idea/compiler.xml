@@ -7,14 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Handball-Unit-Testing" />
-        <module name="inStock" />
+        <module name="Bank-Unit-Testing" />
         <module name="unit-testing" />
         <module name="TestDrivenDevelopmentExercise" />
         <module name="unit-testing-exercise" />
+        <module name="UnitTestingExamDecember10" />
+        <module name="inStock" />
+        <module name="ChristmasAppStore" />
         <module name="Polymorphism" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ChristmasStoreApp" target="20" />
+      <module name="Handball-Unit-Testing" target="20" />
       <module name="Polymorphism" target="20" />
       <module name="TestDrivenDevelopment" target="9" />
       <module name="unit_testing_2" target="20" />
