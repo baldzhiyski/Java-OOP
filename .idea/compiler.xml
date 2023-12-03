@@ -11,6 +11,7 @@
         <module name="unit-testing" />
         <module name="TestDrivenDevelopmentExercise" />
         <module name="unit-testing-exercise" />
+        <module name="UnitTesting-FootballTeam" />
         <module name="UnitTestingExamDecember10" />
         <module name="inStock" />
         <module name="ChristmasAppStore" />
