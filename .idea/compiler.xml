@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Handball-Unit-Testing" />
+        <module name="CatsUnitTest" />
         <module name="Bank-Unit-Testing" />
         <module name="unit-testing" />
         <module name="TestDrivenDevelopmentExercise" />
@@ -20,6 +21,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ChristmasStoreApp" target="20" />
+      <module name="Handball-Unit-Testing" target="20" />
       <module name="Polymorphism" target="20" />
       <module name="TestDrivenDevelopment" target="9" />
       <module name="unit_testing_2" target="20" />
