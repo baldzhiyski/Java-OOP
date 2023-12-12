@@ -20,7 +20,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ChristmasStoreApp" target="20" />
-      <module name="Handball-Unit-Testing" target="20" />
       <module name="Polymorphism" target="20" />
       <module name="TestDrivenDevelopment" target="9" />
       <module name="unit_testing_2" target="20" />

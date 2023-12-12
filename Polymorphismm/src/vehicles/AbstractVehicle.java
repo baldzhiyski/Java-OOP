@@ -19,10 +19,11 @@ public abstract class AbstractVehicle implements Vehicle{
         return fuelQuantity;
     }
 
+    @Override
     public double getFuelConsumption() {
         return fuelConsumption;
     }
-
+    @Override
     public void setFuelConsumption(double fuelConsumption) {
         this.fuelConsumption = fuelConsumption;
     }
